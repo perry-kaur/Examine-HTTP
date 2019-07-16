@@ -1,0 +1,66 @@
+## Questions
+
+Answer these questions in a text file:
+
+What is the meaning of the HTTP request types (HTTP verbs) GET, POST, PUT, and DELETE?   
+
+HTTP means 'Hypertext transfer protocol is used to transfer over the data, it is the part of internet protocol suite and defines command and services used to transmitting the webpage data.
+
+GET this method is used to request an existing resource from the server existing resources contain all the necessary information to retrieve the requested resource. In a GET Request method the form data is encoded in the URL. It is appended to the URL as key/Value pair (Query string).
+
+POST is the HTTP method that was invented to send data to a receiving web application, and it is how most common HTML forms on the web works. It usually sends a chunk of relatively small amounts of data to the receiver.
+
+PUT method requests that the enclosed entity be stored under the supplied Request-URI. If the Request-URI refers to an already existing resource, the enclosed entity should be considered as a modified version of the one residing on the origin serve. Put is used to create and update.
+
+DELETE method requests that the origin server delete the resource identified by the Request-URI. This method MAY be overridden by human intervention (or other means) on the origin server. 
+
+
+
+HTTP responses always include a status code. What are the possible response codes and what do they mean?
+
+100 Continue
+This interim response indicates that everything so far is OK and that the client should continue with the request or ignore it if it is already finished.
+101 Switching Protocol
+This code is sent in response to an upgrade request header by the client, and indicates the protocol the server is switching to.
+102 Processing (webDav) 
+This code indicates that the server has received and is processing the request, but no response is available yet.
+103 Early Hints
+This status code is primarily intended to be used with the link header to allow the user agent to start preloading resources while the server is still preparing a response
+
+How can parameters be sent in a GET request? How are they transferred in HTTP?
+Parameters. You would use the same code, if the request parameters were sent in the body part of the HTTP request. If no parameter exists with the given name, null is returned. In general, if the browser sends an HTTP GET request, the parameters are included in the query string in the URL
+How can parameters be sent in a POST request? How are they transferred in HTTP?
+The values are sent in the request body, in the format that the content type specifies. Usually the content type is application/x-www-form-urlencoded, so the request body uses the same format as the query string:
+
+parameter=value&also=another
+When you use a file upload in the form, you use the multipart/form-data encoding instead, which has a different format. It's more complicated, but you usually don't need to care what it looks like, so I won't show an example, but it can be good to know that it exists.What is the meaning of the HTTP request types (HTTP verbs) GET, POST, PUT, and DELETE?   
+
+HTTP means 'Hypertext transfer protocol is used to transfer over the data, it is the part of internet protocol suite and defines command and services used to transmitting the webpage data.
+
+GET this method is used to request an existing resource from the server existing resources contain all the necessary information to retrieve the requested resource. In a GET Request method the form data is encoded in the URL. It is appended to the URL as key/Value pair (Query string).
+
+POST is the HTTP method that was invented to send data to a receiving web application, and it is how most common HTML forms on the web works. It usually sends a chunk of relatively small amounts of data to the receiver.
+
+PUT method requests that the enclosed entity be stored under the supplied Request-URI. If the Request-URI refers to an already existing resource, the enclosed entity should be considered as a modified version of the one residing on the origin serve. Put is used to create and update.
+
+DELETE method requests that the origin server delete the resource identified by the Request-URI. This method MAY be overridden by human intervention (or other means) on the origin server. 
+
+
+HTTP responses always include a status code. What are the possible response codes and what do they mean?
+
+100 Continue
+This interim response indicates that everything so far is OK and that the client should continue with the request or ignore it if it is already finished.
+101 Switching Protocol
+This code is sent in response to an upgrade request header by the client, and indicates the protocol the server is switching to.
+102 Processing (webDav) 
+This code indicates that the server has received and is processing the request, but no response is available yet.
+103 Early Hints
+This status code is primarily intended to be used with the link header to allow the user agent to start preloading resources while the server is still preparing a response
+
+How can parameters be sent in a GET request? How are they transferred in HTTP?
+Parameters. You would use the same code, if the request parameters were sent in the body part of the HTTP request. If no parameter exists with the given name, null is returned. In general, if the browser sends an HTTP GET request, the parameters are included in the query string in the URL
+
+How can parameters be sent in a POST request? How are they transferred in HTTP?
+The values are sent in the request body, in the format that the content type specifies. Usually the content type is application/x-www-form-urlencoded, so the request body uses the same format as the query string:
+parameter=value&also=another
+When you use a file upload in the form, you use the multipart/form-data encoding instead, which has a different format. It's more complicated, but you usually don't need to care what it looks like, so I won't show an example, but it can be good to know that it exists.
